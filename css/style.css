@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* # UTILS */
 
 .container {
@@ -16,10 +20,10 @@
 }
 
 /* HEADER */
-h1 {
+.title h1 {
   font-family: "Nerko One", cursive;
   color: hsl(33.19deg 100% 53.92);
-  font-size: 2.8rem;
+  font-size: 2rem;
   padding: 10px 0;
   text-align: center;
 }
@@ -28,4 +32,84 @@ h1 {
 main {
   background-color: hsl(40deg 14.29% 95.88%);
   padding: 10px 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-main p {
+  padding: 5px 0px;
+  font-size: 0.9rem;
+}
+
+.top-main h2 {
+  padding-bottom: 15px;
+  color: hsl(266.25deg 29.63% 31.76%);
+}
+.container h3 {
+  padding: 10px;
+}
+
+.container li {
+  padding: 10px;
+}
+
+.buttons ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 50px;
+  background-color: white;
+  height: 40px;
+  text-align: center;
+  padding: 10px 8px;
+  border-radius: 50%;
+}
+
+.presentation h1 {
+  padding: 10px;
+  font-size: 1.6rem;
+}
+.line {
+  width: 78px;
+  height: 3px;
+  margin-left: 12px;
+  background-color: hsl(33.19deg 100% 53.92);
+}
+.story {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+/* Footer */
+.header-sx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.header-sx p {
+  padding-top: 5px;
+}
+
+.header-dx ul {
+  display: flex;
+  color: white;
+  text-decoration: underline;
+
+  justify-content: space-around;
+}
+
+.header-dx a {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  color: white;
+}
+
+.footer {
+  padding: 30px;
+  background-color: hsl(259.32deg 24.48% 52.75%);
 }
