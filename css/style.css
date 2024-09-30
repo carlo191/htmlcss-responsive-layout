@@ -9,6 +9,9 @@
 ul {
   list-style-type: none;
 }
+img {
+  width: 100%;
+}
 
 /* # UTILS */
 
@@ -25,6 +28,12 @@ ul {
   color: hsl(33.19deg 100% 53.92);
   font-size: 2rem;
   padding: 10px 0;
+  text-align: center;
+}
+.subtitle {
+  display: none;
+}
+.y-container {
   text-align: center;
 }
 
@@ -44,12 +53,17 @@ main {
   padding-bottom: 15px;
   color: hsl(266.25deg 29.63% 31.76%);
 }
-.container h3 {
+.in-breve h3 {
+  padding: 10px;
+  background-color: white;
+}
+
+.list li {
   padding: 10px;
 }
 
-.container li {
-  padding: 10px;
+.list ul {
+  background-color: white;
 }
 
 .buttons ul {
@@ -75,10 +89,15 @@ main {
   height: 3px;
   margin-left: 12px;
   background-color: hsl(33.19deg 100% 53.92);
+  margin-bottom: 5px;
 }
 .story {
   padding-top: 15px;
   padding-bottom: 20px;
+}
+
+.banner {
+  display: none;
 }
 
 /* Footer */
@@ -113,3 +132,46 @@ main {
   padding: 30px;
   background-color: hsl(259.32deg 24.48% 52.75%);
 }
+
+/* MEDIA QUERY */
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .top.main h2 {
+    display: flex;
+  }
+  .subtitle {
+    display: block;
+    padding-left: 6px;
+  }
+  .list li {
+    display: inline-block;
+  }
+  .list {
+    padding: 0px 70px;
+  }
+  .in-breve{
+    padding: 0px 70px;
+  }
+  .btn{
+    width: 125px;
+    background-color: white;
+    height: 37px;
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 32%;
+  }
+  .buttons{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .banner{
+    display: block;
+  }
+  .tiramisu{
+    width: 25%;
+    float: left;
+  }
+
