@@ -22,6 +22,10 @@ img {
   max-width: 100%;
 }
 
+.dp-none {
+  display: none;
+}
+
 /* HEADER */
 .title h1 {
   font-family: "Nerko One", cursive;
@@ -135,7 +139,7 @@ main {
 
 /* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-  .title {
+  .title h1 {
     text-align: left;
     padding-left: 10px;
   }
@@ -152,10 +156,10 @@ main {
   .list {
     padding: 0px 70px;
   }
-  .in-breve{
+  .in-breve {
     padding: 0px 70px;
   }
-  .btn{
+  .btn {
     width: 125px;
     background-color: white;
     height: 37px;
@@ -163,15 +167,39 @@ main {
     padding: 12px 0px;
     border-radius: 32%;
   }
-  .buttons{
+  .buttons {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .banner{
+  .banner {
     display: block;
   }
-  .tiramisu{
+  .tiramisu {
     width: 25%;
     float: left;
   }
+}
 
+@media screen and (min-width: 992px) {
+  .top-main h2 {
+    font-size: 2rem;
+    padding-left: 188px;
+    display: flex;
+  }
+
+  .top-main p {
+    padding-left: 188px;
+  }
+  main {
+    padding: 10px 50px;
+  }
+  .dp-none {
+    display: inline-block;
+    padding-left: 5px;
+    font-weight: 700;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
